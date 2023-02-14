@@ -94,8 +94,7 @@ Este documento contiene toda la información sobre los recursos utilizados por e
 | Objetivos y alcances del sistema| [Ir](#ob) |
 | Información del Sistema requerido | [Ir](#sis) |
 | Sistema Operativo | [Ir](#sis) |
-| Tecnologías utilizadas | [Ir](#tech) |
-| Interfaz del programa | [Ir](#inter) |
+| Tecnologías utilizadas | [Ir](#tech) | 
 | Conclusiones | [Ir](#Conclu) |
 
 ## <a name="intro" ></a>INTRODUCCIÓN
@@ -145,6 +144,11 @@ Linux
 - Oracle Linux 5.5+1 
 - Oracle Linux 6.x (32 bits), 6.x (64 bits)2 
 - Exploradores: Firefox
+
+
+## <a name="tech"></a>Tecnologías Utilizadas
+- PNETLab
+- Wireshark
 
 ## <a name="Conclu"></a>Conclusiones
 

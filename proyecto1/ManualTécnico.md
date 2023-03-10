@@ -188,22 +188,38 @@ Linux
 
 ## <a></a>COMANDOS UTILIZADOS
 | Comando | Descripción |
-| ------- | ----------- |
-| enable | Permite acceder al modo privilegiado en un dispositivo de red. |
-| configure terminal | Ingresa al modo de configuración global para realizar cambios en la configuración del dispositivo. |
-| vlan *numero* | Crea una VLAN con el número especificado. |
-| name *nombre* | Asigna un nombre descriptivo a una VLAN. |
-| interface range ethernet 0/inicio-fin | Selecciona un rango de interfaces Ethernet para ser configuradas. |
-| switchport trunk encapsulation dot1q | Configura la encapsulación de troncales para dot1q en un puerto de conmutador. |
-| switchport mode trunk | Configura un puerto de conmutador como troncal. |
-| vtp mode server | Configura un dispositivo como servidor VTP. |
-| vtp domain *dominio* | Configura el nombre del dominio VTP en un dispositivo de red. |
-| vtp password *contraseña* | Configura una contraseña para la sincronización de VTP en un dispositivo de red. |
-| do show vtp status | Muestra el estado actual del protocolo VTP en el dispositivo. |
-| vtp domain *dominio* | Configura el nombre del dominio VTP en un dispositivo de red. |
-| do write | Guarda los cambios realizados en la configuración en la memoria no volátil del dispositivo. |
-| ip *dirección ip* | Asigna una dirección IP a una interfaz de red. |
-| save | Guarda los cambios realizados en la configuración en la memoria no volátil del dispositivo. |
+| --- | --- |
+| `enable` | Activa el modo privilegiado |
+| `configure terminal` | Accede al modo de configuración global |
+| `vlan numero` | Crea una VLAN con el número especificado |
+| `name nombre` | Asigna un nombre a la VLAN creada |
+| `interface range ethernet 0/inicio-fin` | Accede a la configuración de un rango de interfaces Ethernet |
+| `switchport trunk encapsulation dot1q` | Configura la encapsulación del puerto como 802.1Q |
+| `switchport mode trunk` | Configura el puerto en modo trunk |
+| `vtp mode server` | Configura el VTP en modo servidor |
+| `vtp domain dominio` | Asigna un dominio VTP | 
+| `do show vtp status` | Muestra el estado del protocolo VTP |
+| `vtp domain dominio` | Configura el dominio VTP |
+| `vtp password contraseña` | Configura la contraseña VTP | 
+| `interface ethernet 0/puerto` | Accede a la configuración de la interfaz Ethernet 0/puerto | 
+| `switchport mode trunk` | Configura el puerto en modo trunk |
+| `do show vlan brief` | Muestra una lista de VLANs y sus IDs |
+| `do write` | Guarda la configuración actual en la memoria no volátil |
+| `interface e0/ruta` | Accede a la configuración de la interfaz Ethernet especificada |
+| `switchport mode access` | Configura el puerto en modo acceso |
+| `switchport access vlan vlan` | Asigna una VLAN al puerto en modo acceso |
+| `show vlan brief` | Muestra una lista de VLANs y sus IDs |
+| `show vtp status` | Muestra el estado del protocolo VTP |
+| `show spanning-tree` | Muestra la información del protocolo STP | 
+| `shutdown` | Apaga el puerto |
+| `no shutdown` | Enciende el puerto |
+| `hostname nombre` | Cambia el nombre del host |
+| `spanning-tree vlan 1 root primary` | Asigna el switch como raíz de la VLAN 1 |
+| `spanning-tree mode rapid-pvst` | Configura el protocolo STP en modo rapid PVST |
+| `show sp` | Muestra la información del protocolo STP |
+| `ip *IP*` | Asigna la dirección IP a una VPC |
+| `save` | Guarda la configuración de una VPC |
+
 
    
 ## <a></a> PINGS ENTRE HOSTS

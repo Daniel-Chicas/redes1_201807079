@@ -183,7 +183,7 @@ Linux
 
 
 ## <a></a>TOPOLOGÍA
-  <a href="#"><img src="./Capturas/Topología.PNG"/></a>
+  <a href="#"><img src="./capturas/Topología.PNG"/></a>
 
 
 ## <a></a>COMANDOS UTILIZADOS
@@ -209,38 +209,38 @@ Linux
 ## <a></a> PINGS ENTRE HOSTS
   <a href="#">
      # <a></a>PING ENTRE DEPARTAMENTO DE FINANZAS
-    <img src="./Capturas/ping del servidor de finanzas.PNG"/> 
+    <img src="./capturas/ping del servidor de finanzas.PNG"/> 
      # <a></a>PING ENTRE DEPARTAMENTO DE IT
-    <img src="./Capturas/ping del servidor de it.PNG"/>  
+    <img src="./capturas/ping del servidor de it.PNG"/>  
   </a>
   
 ## <a></a> Demostración de que los departamentos no puede compartir información 
   
   <a href="#"> 
-    <img src="./Capturas/intento de ping de server de finanzas a máquina de it.PNG"/> 
+    <img src="./capturas/intento de ping de server de finanzas a máquina de it.PNG"/> 
   </a>
 </p>
 
 
 ## <a></a> CONFIGURACIÓN DE SWITCH
   <a href="#"> 
-    <img src="./Capturas/confSwitch.PNG"/>  
-    <img src="./Capturas/confSwitch2.PNG"/> 
-    <img src="./Capturas/confSwitch3.PNG"/> 
+    <img src="./capturas/confSwitch.PNG"/>  
+    <img src="./capturas/confSwitch2.PNG"/> 
+    <img src="./capturas/confSwitch3.PNG"/> 
   </a>
 
 
 ## <a></a> CONFIGURACIÓN DEL DOMINIO
   <a href="#"> 
-    <img src="./Capturas/configuración del dominio.PNG"/>
+    <img src="./capturas/configuración del dominio.PNG"/>
   </a>
 
 ## <a></a> CONFIGURACIÓN DE VLAN
   <a href="#"> 
-    <img src="./Capturas/configuración VLAN.PNG"/>
+    <img src="./capturas/Configuración VLAN.PNG"/>
   </a>
 
 ## <a></a> DEMOSTRACIÓN DEL VTP STATUS
   <a href="#"> 
-    <img src="./Capturas/vtp status.PNG"/>
+    <img src="./capturas/vtp status.PNG"/>
   </a> 

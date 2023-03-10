@@ -26,8 +26,8 @@
 
 ---
 
-<center> <h1>PRACTICA #1</h1> </center>
-<center> <h1>RED LOCAL PEQUEÑA</h1> </center>
+<center> <h1>PROYECTO #1</h1> </center>
+<center> <h1>CONSTRUCCIÓN DE RED LOCAL</h1> </center>
 
 
 
@@ -82,9 +82,9 @@
 ---
 
 # <a name="nothing"></a>MANUAL DE TÉCNICO
-Este documento contiene toda la información sobre los recursos utilizados por el programa para desplegarlo y utilizarlo, explicando todo el trabajo que se ha realizado al crear la calculadora.
+Este documento contiene toda la información sobre los recursos utilizados por el programa para desplegarlo y utilizarlo, explicando todo el trabajo que se ha realizado al crear la red local.
 
->“Programa desarrollado en PNETLab y Wireshark que permite simular una topología de una red para un pequeño negocio de dos niveles.”
+>“Programa desarrollado en PNETLab y Wireshark que permite simular una topología de una red donde diferentes departamentos puede existir.”
 ## <a name="intro" ></a>ÍNDICE
 
 | Topico | Link |
@@ -98,21 +98,21 @@ Este documento contiene toda la información sobre los recursos utilizados por e
 | Conclusiones | [Ir](#Conclu) |
 
 ## <a name="intro" ></a>INTRODUCCIÓN
-El presente manual técnico tiene como finalidad describir la estructura y diseño del programa que se realizó como parte de Practica 1, así como dar explicación de los como usted como desarrollador puede mejorar y comprender el funcionamiento.
+El presente manual técnico tiene como finalidad describir la estructura y diseño del programa que se realizó como parte del Proyecto 1, así como dar explicación para los desarrolladores como usted puedan comprender el funcionamiento.
 
 ## <a name="inf"></a>Informacion del Sistema
 La topología de red se define como un mapa físico o lógico de una red para intercambiar datos. En otras palabras, es la forma en que está diseñada la red, sea en el plano físico o lógico. El concepto de red puede definirse como «conjunto de nodos interconectados».
 
-En esta práctica se realizó una topología de red básica, en donde se puede realizar ping entre computadoras de los 2 niveles, donde cada una tiene una ip asignada y se puede realizar captura de paquetes entre ellas.
+En este proyecto se realizó una topología de red básica, en donde las computadoras del mismo departamento pueden compartir información y con esto ahorrar costos en instalación.
 
 ## <a name="ob"></a>Objetivos y alcances del sistema
 
 ### Objetivo General
 - Que el estudiante demuestre los conocimientos adquiridos en clase y cree una red local pequeña.
 ### Objetivos Específicos
-- Demostrar el conocimiento adquirido respecto a los protocolos Ethernet, IP, ARP e ICMP.
-- Demostrar el conocimiento requerido para la configuración de máquinas virtuales VPC y switches de capa 2.
-- Emplear la herramienta PNETLab para desarrollar la topología de acuerdo con las especificaciones dadas.
+- Demostrar el conocimiento adquirido sobre la creación de VLANS y el protocolo VTP, lo que permitirá la segmentación lógica de la red para mejorar el rendimiento y la seguridad.
+- Demostrar el conocimiento adquirido sobre el Spanning Tree Protocol, que garantiza la redundancia y previene los bucles en la red.
+- Emplear la herramienta PNETLab para desarrollar la topología de red de acuerdo con las especificaciones dadas.
 - Emplear la herramienta Wireshark para realizar capturas de paquetes.
 
 ## <a name="sis"></a>Especificaciones del Sistema requerido
@@ -161,46 +161,86 @@ Linux
 - Ofrece una gran cantidad de filtros y opciones de análisis para ayudar a los usuarios a concentrarse en el tráfico relevante y a entender cómo funciona la red.
 
 ## <a name="Conclu"></a>Apéndice
+ 
 
-<p align="center">
-  
+
+## <a></a>RESUMEN DE LAS DIRECCIONES IP Y VLAN
+
+| Departamento | VLAN | VPC        | IP             |
+| ------------ | ---- | ----------| --------------|
+| Planeación   | 19   | Server_Planeación | 192.168.19.1 |
+|              |      | Planeacion_1 | 192.168.19.2 |
+| Finanzas     | 29   | SrvFin     | 192.168.29.1 |
+|              |      | Finanzas_1 | 192.168.29.2 |
+|              |      | Finanzas_2 | 192.168.29.3 |
+| RRHH         | 39   | Server_RRHH | 192.168.39.1 |
+|              |      | RRHH_1     | 192.168.39.2 |
+|              |      | RRHH_2     | 192.168.39.3 |
+| IT           | 49   | Server_IT  | 192.168.49.1 |
+|              |      | IT_1       | 192.168.49.2 |
+|              |      | IT_2       | 192.168.49.3 |
+
+
+
 ## <a></a>TOPOLOGÍA
   <a href="#"><img src="./Capturas/Topología.PNG"/></a>
 
-  
-## <a></a>CONFIGURACIÓN DE PING DE COMPUTADORAS 
-  <a href="#">
-     # <a></a>OFICINAS C SEGUNDO NIVEL 
-    <img src="./Capturas/configuraciónIP_OficinasC 2do nivel.PNG"/>
-     # <a></a>OFICINAS A SEGUNDO NIVEL 
-    <img src="./Capturas/configuraciónIP_OficinasA 2do nivel.PNG"/>
-     # <a></a>OFICINAS B SEGUNDO NIVEL 
-    <img src="./Capturas/configuraciónIP_OficinasB 2do nivel.PNG"/>
-     # <a></a>ATENCIÓN AL CLIENTE PRIMER NIVEL 
-    <img src="./Capturas/configuraciónIP_AtenciónCliente 1er nivel.PNG"/>
-     # <a></a>GERENCIA PRIMER NIVEL
-    <img src="./Capturas/configuraciónIP_Gerencia 1er nivel.PNG"/>
-     # <a></a>RECEPCIÓN PRIMER NIVEL 
-    <img src="./Capturas/configuraciónIP_Recepción 1er nivel.PNG"/>
-     # <a></a>OFICINAS PRIMER NIVEL 
-    <img src="./Capturas/configuraciónIP_Oficina 1er nivel.PNG"/>
-  </a>
-  
+
+## <a></a>COMANDOS UTILIZADOS
+| Comando | Descripción |
+| ------- | ----------- |
+| enable | Permite acceder al modo privilegiado en un dispositivo de red. |
+| configure terminal | Ingresa al modo de configuración global para realizar cambios en la configuración del dispositivo. |
+| vlan *numero* | Crea una VLAN con el número especificado. |
+| name *nombre* | Asigna un nombre descriptivo a una VLAN. |
+| interface range ethernet 0/inicio-fin | Selecciona un rango de interfaces Ethernet para ser configuradas. |
+| switchport trunk encapsulation dot1q | Configura la encapsulación de troncales para dot1q en un puerto de conmutador. |
+| switchport mode trunk | Configura un puerto de conmutador como troncal. |
+| vtp mode server | Configura un dispositivo como servidor VTP. |
+| vtp domain *dominio* | Configura el nombre del dominio VTP en un dispositivo de red. |
+| vtp password *contraseña* | Configura una contraseña para la sincronización de VTP en un dispositivo de red. |
+| do show vtp status | Muestra el estado actual del protocolo VTP en el dispositivo. |
+| vtp domain *dominio* | Configura el nombre del dominio VTP en un dispositivo de red. |
+| do write | Guarda los cambios realizados en la configuración en la memoria no volátil del dispositivo. |
+| ip *dirección ip* | Asigna una dirección IP a una interfaz de red. |
+| save | Guarda los cambios realizados en la configuración en la memoria no volátil del dispositivo. |
+
+   
 ## <a></a> PINGS ENTRE HOSTS
   <a href="#">
-     # <a></a>PING OFICINA 1 A RECEPCIÓN (PRIMER NIVEL)
-    <img src="./Capturas/ping-Oficina1_Recepción.PNG"/> 
-     # <a></a>PING GERENCIA A ATENCIÓN AL CLIENTE (PRIMER NIVEL)
-    <img src="./Capturas/ping-Gerencia_AtencionCliente1.PNG"/>  
-     # <a></a>PING OFICINA A1 (SEGUNDO NIVEL) A RECEPCIÓN (PRIMER NIVEL)
-    <img src="./Capturas/ping-OficinaA1_Recepción1erNivel.PNG"/> 
-     # <a></a>PING OFICINA B1 A OFICINA C4 (SEGUNDO NIVEL)
-    <img src="./Capturas/ping-OficinaB1_OficinaC4.PNG"/> 
+     # <a></a>PING ENTRE DEPARTAMENTO DE FINANZAS
+    <img src="./Capturas/ping del servidor de finanzas.PNG"/> 
+     # <a></a>PING ENTRE DEPARTAMENTO DE IT
+    <img src="./Capturas/ping del servidor de it.PNG"/>  
   </a>
   
-## <a></a> Demostración de la captura de un paquete ARP 
+## <a></a> Demostración de que los departamentos no puede compartir información 
   
   <a href="#"> 
-    <img src="./Capturas/arp_OficinaB1_OficinaC4.PNG"/> 
+    <img src="./Capturas/intento de ping de server de finanzas a máquina de it.PNG"/> 
   </a>
 </p>
+
+
+## <a></a> CONFIGURACIÓN DE SWITCH
+  <a href="#"> 
+    <img src="./Capturas/confSwitch.PNG"/>  
+    <img src="./Capturas/confSwitch2.PNG"/> 
+    <img src="./Capturas/confSwitch3.PNG"/> 
+  </a>
+
+
+## <a></a> CONFIGURACIÓN DEL DOMINIO
+  <a href="#"> 
+    <img src="./Capturas/configuración del dominio.PNG"/>
+  </a>
+
+## <a></a> CONFIGURACIÓN DE VLAN
+  <a href="#"> 
+    <img src="./Capturas/configuración VLAN.PNG"/>
+  </a>
+
+## <a></a> DEMOSTRACIÓN DEL VTP STATUS
+  <a href="#"> 
+    <img src="./Capturas/vtp status.PNG"/>
+  </a> 

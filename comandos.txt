@@ -1,0 +1,54 @@
+Poner puertos en modo Trunk:
+	enable					->
+	configure terminal		->
+	vlan *numero*			->
+	name *nombre*			->
+	interface range ethernet 0/inicio-fin
+	switchport trunk encapsulation dot1q
+	switchport mode trunk
+	vtp mode server
+	vtp domain *dominio*
+	vtp password *contraseña*
+	do show vtp status
+
+vtp domain *dominio*
+
+
+
+PARA CONFIGURAR ACCESOS A SWITCH:
+	enable
+	conf t
+	vtp domain 201807079
+	vtp password usac
+	vtp mode client 
+	interface range ethernet 0/inicio-fin
+	interface ethernet 0/0
+	switchport trunk encapsulation dot1q
+	swotchport mode trunk
+	do show vlan brief
+	do write
+
+PARA CONFIGURAR ACCESOS A VPC:
+	enable
+	conf t
+	int e0/ruta
+	switchport mode access 
+	switchport access vlan *vlan*
+	do show vlan brief
+	do show vtp status
+
+CONFIGURAR STP:
+	enable
+	show spanning-tree
+	host *NOMBRE*
+	interface ethernet 0/1
+	shutdown
+	no shutdown
+
+Cambiar root a otro switch
+	enable
+	configure terminal
+	hostname *nombre*
+	spanning-tree vlan 1 root primary
+	spanning-tree mode rapid-pvst
+	do show sp

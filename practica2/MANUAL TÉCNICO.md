@@ -233,20 +233,20 @@ Linux
 
 | Funcionalidad | Comando | Descripción |
 | --- | --- | --- |
-| Creación de ruta estática | `enable`<br>`configure terminal`<br>`ip route <red> <máscara> <ip>` | Habilita el modo privilegiado, entra en la configuración y agrega una ruta estática hacia una red determinada. |
-| Creación de PortChannel con PAGP y LACP | `enable`<br>`configure terminal`<br>`hostname <nombre>`<br>`interface Port-channel 1`<br>`description <descripción>`<br>`exit`<br>`interface range ethernet 0/0-1`<br>`channel-group 1 mode <modo>`<br>`show etherchannel summary`<br>`show lacp neighbor`<br>`show run interface e0/0`<br>`configure terminal`<br>`interface range e0/0-2`<br>`no channel-group 1 mode <modo>` | Habilita el modo privilegiado, entra en la configuración, asigna un nombre al switch y configura un PortChannel con PAGP y LACP. Luego, muestra información sobre el PortChannel creado y los puertos que lo conforman. Por último, desactiva los puertos del switch. |
-| Creación de IP virtual con HSRP y GLBP | **HSRP:**<br>`enable`<br>`configure terminal`<br>`hostname R2`<br>`interface e0/1`<br>`ip address <ip> <máscara>`<br>`no shut`<br>`standby 1 ip <ip virtual>`<br>`standby 1 priority 101`<br>`standby 1 preempt`<br>`do show standby brief`<br>**GLBP:**<br>`enable`<br>`configure terminal`<br>`glbp 7 ip <ip>`<br>`glbp 7 priority 99`<br>`glbp 7 load-balancing round-robin`<br>`do show glbp brief` | Habilita el modo privilegiado, entra en la configuración, asigna un nombre al router y configura una IP en una interfaz. Luego, configura un IP virtual con HSRP o GLBP y muestra información sobre el protocolo configurado. |
-| Configuración de VPC | `ip <ip> <puerta de enlace>`<br>`save` | Configura una dirección IP y una puerta de enlace en una VPC y guarda la configuración. |
+| Creación de ruta estática | enable<br>configure terminal<br>ip route <red> <máscara> <ip> | Habilita el modo privilegiado, entra en la configuración y agrega una ruta estática hacia una red determinada. |
+| Creación de PortChannel con PAGP y LACP | enable<br>configure terminal<br>hostname <nombre><br>interface Port-channel 1<br>description <descripción><br>exit<br>interface range ethernet 0/0-1<br>channel-group 1 mode <modo><br>show etherchannel summary<br>show lacp neighbor<br>show run interface e0/0<br>configure terminal<br>interface range e0/0-2<br>no channel-group 1 mode <modo> | Habilita el modo privilegiado, entra en la configuración, asigna un nombre al switch y configura un PortChannel con PAGP y LACP. Luego, muestra información sobre el PortChannel creado y los puertos que lo conforman. Por último, desactiva los puertos del switch. |
+| Creación de IP virtual con HSRP y GLBP | **HSRP:**<br>enable<br>configure terminal<br>hostname R2<br>interface e0/1<br>ip address <ip> <máscara><br>no shut<br>standby 1 ip <ip virtual><br>standby 1 priority 101<br>standby 1 preempt<br>do show standby brief<br>**GLBP:**<br>enable<br>configure terminal<br>glbp 7 ip <ip><br>glbp 7 priority 99<br>glbp 7 load-balancing round-robin<br>do show glbp brief | Habilita el modo privilegiado, entra en la configuración, asigna un nombre al router y configura una IP en una interfaz. Luego, configura un IP virtual con HSRP o GLBP y muestra información sobre el protocolo configurado. |
+| Configuración de VPC | ip <ip> <puerta de enlace><br>save | Configura una dirección IP y una puerta de enlace en una VPC y guarda la configuración. |
 
 ## <a></a>Comandos empleados para la verificación del correcto funcionamiento de los protocolos empleados para la realización de la práctica
 
 | Protocolo | Comando | Descripción |
 | --- | --- | --- |
-| HSRP | `show standby brief` | Muestra un resumen de la información de HSRP, incluyendo el estado actual de la interfaz virtual y los routers que participan en el protocolo. |
-| GLBP | `show glbp brief` | Muestra un resumen de la información de GLBP, incluyendo el estado actual de los grupos de balanceo de carga y los routers que participan en el protocolo. |
-| VPC | `ping <ip>` | Verifica la conectividad con otra VPC o con un router mediante la transmisión de paquetes ICMP. |
-| Rutas estáticas | `show ip route` | Muestra la tabla de enrutamiento del router, incluyendo las rutas estáticas que se han configurado. |
-| PortChannel | `show etherchannel summary`<br>`show lacp neighbor`<br>`show interfaces port-channel 1` | Muestra un resumen de la información del PortChannel, incluyendo el estado actual, los puertos que lo conforman y los paquetes transmitidos y recibidos por la interfaz. |
+| HSRP | show standby brief | Muestra un resumen de la información de HSRP, incluyendo el estado actual de la interfaz virtual y los routers que participan en el protocolo. |
+| GLBP | show glbp brief | Muestra un resumen de la información de GLBP, incluyendo el estado actual de los grupos de balanceo de carga y los routers que participan en el protocolo. |
+| VPC | ping <ip> | Verifica la conectividad con otra VPC o con un router mediante la transmisión de paquetes ICMP. |
+| Rutas estáticas | show ip route | Muestra la tabla de enrutamiento del router, incluyendo las rutas estáticas que se han configurado. |
+| PortChannel | show etherchannel summary<br>show lacp neighbor<br>show interfaces port-channel 1 | Muestra un resumen de la información del PortChannel, incluyendo el estado actual, los puertos que lo conforman y los paquetes transmitidos y recibidos por la interfaz. |
 
 
 </p>

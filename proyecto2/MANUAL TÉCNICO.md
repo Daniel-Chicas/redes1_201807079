@@ -98,17 +98,17 @@ Este documento contiene toda la información sobre los recursos utilizados por e
 | Conclusiones | [Ir](#Conclu) |
 
 ## <a name="intro" ></a>INTRODUCCIÓN
-El presente manual técnico tiene como finalidad describir la estructura y diseño del programa que se realizó como parte de Practica 2, así como dar explicación de los como usted como desarrollador puede mejorar y comprender el funcionamiento.
+El presente manual técnico tiene como finalidad describir la estructura y diseño del programa que se realizó como parte de Proyecto 2, así como dar explicación de los como usted como desarrollador puede mejorar y comprender el funcionamiento.
 
 ## <a name="inf"></a>Informacion del Sistema
 La topología de red se define como un mapa físico o lógico de una red para intercambiar datos. En otras palabras, es la forma en que está diseñada la red, sea en el plano físico o lógico. El concepto de red puede definirse como «conjunto de nodos interconectados».
 
-En esta práctica se realizó una topología de red básica, en donde se puede realizar ping entre computadoras de los 2 niveles, donde cada una tiene una ip asignada y se puede realizar captura de paquetes entre ellas.
+En esta proyecto se realizó una topología de red básica, en donde se puede realizar ping entre computadoras de los 2 niveles, donde cada una tiene una ip asignada y se puede realizar captura de paquetes entre ellas.
 
 ## <a name="ob"></a>Objetivos y alcances del sistema
 
 ### Objetivo General
-- Que el estudiante demuestre los conocimientos adquiridos en clase y ponga en práctica lo aprendido para configurar enrutamiento entre redes.
+- Que el estudiante demuestre los conocimientos adquiridos en clase y ponga en proyecto lo aprendido para configurar enrutamiento entre redes.
 ### Objetivos Específicos
 - Demostrar el conocimiento adquirido respecto a la agregación de enlaces.
 - Demostrar el conocimiento adquirido para la creación de rutas estáticas.

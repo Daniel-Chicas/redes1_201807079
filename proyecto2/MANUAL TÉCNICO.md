@@ -162,49 +162,49 @@ Linux
 #  Resumen de IP y VLAN
  
 <p align="center">
-  <a href="#"><img src="./Imagenes/Central.png"/></a>
+  <a href="#"><img src="./Imagenes/Central.PNG"/></a>
 </p>
 
 ---
 ---
 
 <p align="center">
-  <a href="#"><img src="./Imagenes/Core.png"/></a>
+  <a href="#"><img src="./Imagenes/Core.PNG"/></a>
 </p>
 
 ---
 ---
 
 <p align="center">
-  <a href="#"><img src="./Imagenes/Jutiapa.png"/></a>
-</p>
-
----
----
-  
-<p align="center">
-  <a href="#"><img src="./Imagenes/Central.png"/></a>
+  <a href="#"><img src="./Imagenes/Jutiapa.PNG"/></a>
 </p>
 
 ---
 ---
   
 <p align="center">
-  <a href="#"><img src="./Imagenes/Jutiapa-J1J2.png"/></a>
+  <a href="#"><img src="./Imagenes/Central.PNG"/></a>
 </p>
 
 ---
 ---
   
 <p align="center">
-  <a href="#"><img src="./Imagenes/Centra - C1C2.png"/></a>
+  <a href="#"><img src="./Imagenes/Jutiapa-J1J2.PNG"/></a>
 </p>
 
 ---
 ---
   
 <p align="center">
-  <a href="#"><img src="./Imagenes/Tablas.png"/></a>
+  <a href="#"><img src="./Imagenes/Centra - C1C2.PNG"/></a>
+</p>
+
+---
+---
+  
+<p align="center">
+  <a href="#"><img src="./Imagenes/Tablas.PNG"/></a>
 </p>
 
 ---
@@ -213,7 +213,7 @@ Linux
 
 # TOPOLOGÍA
 <p align="center">
-  <a href="#"><img src="./topología.png"/></a>
+  <a href="#"><img src="./topología.PNG"/></a>
 </p>
 
 
@@ -295,15 +295,15 @@ Linux
   
 ##  Vlan
 <p align="center">
-  <a href="#"><img src="./Imagenes/VLAN - WIRESHARK.png"/></a>
+  <a href="#"><img src="./Imagenes/VLAN - WIRESHARK.PNG"/></a>
 </p>
 
 ## GLBP
 <p align="center">
-  <a href="#"><img src="./Imagenes/GLBP - WIRESHARK.png"/></a>
+  <a href="#"><img src="./Imagenes/GLBP - WIRESHARK.PNG"/></a>
 </p>
 
 ## HSRP
 <p align="center">
-  <a href="#"><img src="./Imagenes/HSRP - WIRESHARK.png"/></a>
+  <a href="#"><img src="./Imagenes/HSRP - WIRESHARK.PNG"/></a>
 </p>

@@ -102,8 +102,7 @@ El presente manual técnico tiene como finalidad describir la estructura y dise�
 
 ## <a name="inf"></a>Informacion del Sistema
 La topología de red se define como un mapa físico o lógico de una red para intercambiar datos. En otras palabras, es la forma en que está diseñada la red, sea en el plano físico o lógico. El concepto de red puede definirse como «conjunto de nodos interconectados».
-
-En esta proyecto se realizó una topología de red básica, en donde se puede realizar ping entre computadoras de los 2 niveles, donde cada una tiene una ip asignada y se puede realizar captura de paquetes entre ellas.
+ 
 
 ## <a name="ob"></a>Objetivos y alcances del sistema
 
